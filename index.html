@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Donation App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="form-container" role="main" aria-label="Donation form">
+      <h2>Make a Donation</h2>
+
+      <div class="form-group">
+        <label for="donator-name"
+          ><i class="fas fa-user"></i> Donator / Organization Name</label
+        >
+        <input
+          type="text"
+          id="donator-name"
+          placeholder="Your name or organization"
+          autocomplete="organization"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="donation-image"
+          ><i class="fas fa-image"></i> Picture of materials
+          <small style="color: #4f46e5; margin-top: 0.25rem; margin-left: 5px"
+            >(Max Size 5MB)</small
+          >
+        </label>
+
+        <input
+          type="file"
+          id="donation-image"
+          accept="image/*"
+          aria-describedby="imageHelp"
+        />
+        <img id="imagePreview" alt="Donation item preview" aria-live="polite" />
+        <small
+          id="imageHelp"
+          style="color: var(--color-text-secondary); margin-top: 0.25rem"
+          >Preview of the selected image</small
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="donation-description"
+          ><i class="fas fa-file-alt"></i> Item Description</label
+        >
+        <textarea
+          id="donation-description"
+          placeholder="Describe what you're donating..."
+          required
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="donation-location"
+          ><i class="fas fa-map-marker-alt"></i> Pickup Address</label
+        >
+        <input
+          type="text"
+          id="donation-location"
+          placeholder="Start typing your address..."
+          required
+        />
+      </div>
+
+      <div class="buttons">
+        <button class="primary" id="submit-donation" disabled>
+          <i class="fas fa-gift"></i> Donate
+        </button>
+      </div>
+    </main>
+
+    <div id="snackbar" role="alert" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
