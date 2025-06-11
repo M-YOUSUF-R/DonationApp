@@ -2,7 +2,7 @@
 
 This project is a simple Donation App backend built with Google Apps Script. It accepts donation data through POST requests, including optional image uploads, and stores the information in a Google Sheet and Google Drive.
 ## Download
-### download mobile pre-released from here:
+### download pre-released version from here:
 [**Android**](https://github.com/M-YOUSUF-R/DonationApp/releases/download/v0.0.1/Donate.apk)
 ## Features
 
