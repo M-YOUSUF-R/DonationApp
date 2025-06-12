@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/progressbar_barfiller.css" />
+    <link rel="stylesheet" href="assets/css/gijgo.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/animated-headline.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/donate-form.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <title>Donation App</title>
+  </head>
+  <body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div class="preloader-circle"></div>
+          <div class="preloader-img pere-text">
+            <img src="assets/img/logo/loder.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Preloader end -->
+    <div class="main-content">
+      <main class="form-container" role="main" aria-label="Donation form">
+        <h2>Make a Donation</h2>
+
+        <div class="form-group">
+          <label for="donator-name"
+            ><i class="fas fa-user"></i> Donator / Organization Name</label
+          >
+          <input
+            type="text"
+            id="donator-name"
+            placeholder="Your name or organization"
+            autocomplete="organization"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="donation-image"
+            ><i class="fas fa-image"></i> Picture of materials
+            <small style="color: #4f46e5; margin-top: 0.25rem; margin-left: 5px"
+              >(Max Size 5MB)</small
+            >
+          </label>
+
+          <input
+            type="file"
+            id="donation-image"
+            accept="image/*"
+            aria-describedby="imageHelp"
+          />
+          <img
+            id="imagePreview"
+            alt="Donation item preview"
+            aria-live="polite"
+          />
+          <small
+            id="imageHelp"
+            style="color: var(--color-text-secondary); margin-top: 0.25rem"
+            >Preview of the selected image</small
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="donation-description"
+            ><i class="fas fa-file-alt"></i> Item Description</label
+          >
+          <textarea
+            id="donation-description"
+            placeholder="Describe what you're donating..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="donation-location"
+            ><i class="fas fa-map-marker-alt"></i> Pickup Address</label
+          >
+          <input
+            type="text"
+            id="donation-location"
+            placeholder="Start typing your address..."
+            required
+          />
+        </div>
+
+        <div class="buttons">
+          <button class="primary" id="submit-donation" disabled>
+            <i class="fas fa-gift"></i> Donate
+          </button>
+        </div>
+      </main>
+    </div>
+    <!-- Return home -->
+    <div class="home-btn-container">
+      <button class="home-btn">
+        <a href="index.html">Return Home</a>
+      </button>
+    </div>
+    <div id="snackbar" role="alert" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="js/script.js"></script>
+    <!-- JS here -->
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    <!-- Progress -->
+    <script src="./assets/js/jquery.barfiller.js"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
