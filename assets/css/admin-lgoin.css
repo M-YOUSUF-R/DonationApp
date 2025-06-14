@@ -1,0 +1,349 @@
+/* CSS will be inlined here for demonstration */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  width: 40vw;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 50px rgba(0, 100, 0, 0.15);
+}
+
+.left-panel {
+  flex: 1;
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.left-panel::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.left-panel::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: -80px;
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+}
+
+.panel-content {
+  position: relative;
+  z-index: 2;
+  max-width: 400px;
+}
+
+.panel-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.panel-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.features {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.feature i {
+  background: rgba(255, 255, 255, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+.login-form {
+  flex: 1;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo i {
+  font-size: 2.5rem;
+  color: #09cc7f;
+  margin-right: 15px;
+}
+
+.logo span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #09cc7f;
+}
+
+.form-header {
+  margin-bottom: 30px;
+}
+
+.form-header h2 {
+  font-size: 2rem;
+  color: #09cc7f;
+  margin-bottom: 10px;
+  width: 100%;
+  margin: auto;
+}
+
+.form-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group i {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 18px 20px 18px 60px;
+  font-size: 1.1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #2c3e50;
+}
+
+.input-group input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.2);
+  background: #fff;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #2c3e50;
+}
+
+.remember input {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #2e7d32;
+}
+
+.options a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.options a:hover {
+  color: #1b5e20;
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(to right, #2e7d32, #09cc7f);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-btn i {
+  margin-right: 10px;
+  font-size: 1.4rem;
+}
+
+.login-btn:hover {
+  background: linear-gradient(to right, #1b5e20, #2e7d32);
+  transform: translateY(-3px);
+  box-shadow: 0 7px 15px rgba(46, 125, 50, 0.3);
+}
+
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.divider span {
+  display: inline-block;
+  padding: 0 15px;
+  background: white;
+  position: relative;
+  z-index: 1;
+  color: #7f8c8d;
+  font-size: 1rem;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #e0e0e0;
+  z-index: 0;
+}
+
+.return-home-btn {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  background: #f8f9fa;
+  color: #1b5e20;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.return-home-btn i {
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+
+.return-home-btn:hover {
+  background: #e8f5e9;
+  border-color: #2e7d32;
+  color: #1b5e20;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    width: 60vw;
+  }
+
+  .left-panel {
+    padding: 40px 30px;
+  }
+
+  .login-form {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100vw;
+  }
+  .left-panel,
+  .login-form {
+    padding: 30px 20px;
+  }
+
+  .form-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .input-group input {
+    padding: 15px 15px 15px 50px;
+    font-size: 1rem;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .options a {
+    margin-top: 15px;
+  }
+
+  .logo span {
+    font-size: 1.5rem;
+  }
+
+  .login-btn,
+  .return-home-btn {
+    padding: 15px;
+    font-size: 1rem;
+  }
+}
